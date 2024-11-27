@@ -2,6 +2,7 @@ services:
   - type: web
     plan: free
     name: node-app
+    region: frankfurt
     runtime: node
     repo: https://github.com/Astralale/render_example.git
     buildCommand: "npm install"
@@ -15,4 +16,5 @@ services:
 databases:
   - name: node-app-db
     plan: free
+    region: frankfurt
 
